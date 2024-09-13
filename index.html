@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajay Vala - Full Stack Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      .header {
+        background-color: #007bff;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        border-bottom: 4px solid #0056b3;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 2.8em;
+        font-weight: bold;
+      }
+
+      .header p {
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: 300;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .profile {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .profile img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 5px solid #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
+      }
+
+      .profile-info {
+        flex-grow: 1;
+      }
+
+      .profile-info h2 {
+        margin: 0;
+        font-size: 2.2em;
+        font-weight: 600;
+      }
+
+      .profile-info p {
+        margin: 10px 0;
+        font-size: 1.1em;
+      }
+
+      .profile-info p i {
+        color: #007bff;
+        margin-right: 10px;
+      }
+
+      .section {
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .section h3 {
+        margin-top: 0;
+        font-size: 1.8em;
+        color: #007bff;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+      }
+
+      .section ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .section ul li {
+        margin: 8px 0;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+      }
+
+      .section ul li i {
+        margin-right: 10px;
+        color: #007bff;
+      }
+
+      .experience {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .education {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .card h4 {
+        margin: 0;
+        font-size: 1.4em;
+        color: #007bff;
+      }
+
+      .card p {
+        margin: 10px 0;
+        font-size: 0.9em;
+      }
+
+      .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .skills-section {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      .skills-section ul {
+        padding-left: 20px;
+      }
+
+      .footer {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      .footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .profile {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .profile img {
+          margin-bottom: 20px;
+        }
+
+        .skills {
+          flex-direction: column;
+        }
+
+        .projects,
+        .experience,
+        .education {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Ajay Vala</h1>
+      <p>Full Stack Developer | React, React Native, Node.js, Express.js</p>
+    </div>
+
+    <div class="container">
+      <!-- Profile Section -->
+      <div class="profile">
+        <img
+          src="https://avatars.githubusercontent.com/ajayvalar1"
+          alt="Ajay Vala"
+        />
+        <div class="profile-info">
+          <h2>Ajay Vala</h2>
+          <p><i class="fas fa-briefcase"></i> Full Stack Developer</p>
+          <p><i class="fas fa-envelope"></i> ajayvalar1@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +91 72849 49404</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 167 Vivekanand Society, Surat,
+            India
+          </p>
+          <p>
+            <i class="fas fa-calendar-alt"></i> Date of Birth: 26th Nov, 1996
+          </p>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="section">
+        <h3>Skills</h3>
+        <div class="skills">
+          <div class="skills-section">
+            <h4>Frontend</h4>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> React.js</li>
+              <li><i class="fas fa-check-circle"></i> Next.js</li>
+              <li><i class="fas fa-check-circle"></i> React Native</li>
+              <li><i class="fas fa-check-circle"></i> Redux / Redux Toolkit</li>
+              <li><i class="fas fa-check-circle"></i> HTML, CSS, JavaScript</li>
+              <li><i class="fas fa-check-circle"></i> jQuery</li>
+            </ul>
+          </div>
+          <div class="skills-section">
+            <h4>Backend</h4>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Node.js</li>
+              <li><i class="fas fa-check-circle"></i> Nest.js</li>
+              <li><i class="fas fa-check-circle"></i> Express.js</li>
+              <li><i class="fas fa-check-circle"></i> MongoDB</li>
+              <li><i class="fas fa-check-circle"></i> MySQL</li>
+              <li><i class="fas fa-check-circle"></i> Core PHP</li>
+            </ul>
+          </div>
+          <div class="skills-section">
+            <h4>Others</h4>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Git</li>
+              <li><i class="fas fa-check-circle"></i> GraphQL</li>
+              <li><i class="fas fa-check-circle"></i> Firebase</li>
+              <li><i class="fas fa-check-circle"></i> AWS</li>
+              <li><i class="fas fa-check-circle"></i> Razorepay</li>
+              <li><i class="fas fa-check-circle"></i> Stripe</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Archivements Section -->
+      <div class="section">
+        <h3>Archivements</h3>
+        <div class="education">
+          <div class="card">
+            <h4>GSET in Mathematics</h4>
+            <p><strong>Status:</strong> Qualified</p>
+            <p><strong>Year:</strong> 2022</p>
+          </div>
+          <div class="card">
+            <h4>Mathematics on Valsad</h4>
+            <p><strong>Status:</strong> Participate</p>
+            <p><strong>Year:</strong> 2015</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div class="section">
+        <h3>Education</h3>
+        <div class="education">
+          <div class="card">
+            <h4>Master of Science (M.Sc.) in Mathematics</h4>
+            <p><strong>Institution:</strong> VNSGU</p>
+            <p><strong>Percentage:</strong> 79.2%</p>
+            <p><strong>Year:</strong> 2019</p>
+          </div>
+          <div class="card">
+            <h4>Bachelor of Science (B.Sc.) in Mathematics</h4>
+            <p><strong>Institution:</strong> VNSGU</p>
+            <p><strong>Percentage:</strong> 70.9%</p>
+            <p><strong>Year:</strong> 2017</p>
+          </div>
+          <div class="card">
+            <h4>Higher Secondary (12th Grade)</h4>
+            <p><strong>Institution:</strong> GSHEB</p>
+            <p><strong>Percentage:</strong> 63.7%</p>
+            <p><strong>Year:</strong> 2014</p>
+          </div>
+          <div class="card">
+            <h4>Secondary (10th Grade)</h4>
+            <p><strong>Institution:</strong> GSEB</p>
+            <p><strong>Percentage:</strong> 67.68%</p>
+            <p><strong>Year:</strong> 2012</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Projects Section -->
+      <div class="section">
+        <h3>Work Projects</h3>
+        <div class="projects">
+          <div class="card">
+            <h4>API Backend</h4>
+            <p><strong>Project Name:</strong> iCars Project</p>
+            <p><strong>Role:</strong> Senior Nest.JS Developer</p>
+            <p><strong>Technology:</strong> Nest.JS, MongoDB</p>
+            <p><strong>Tools:</strong> VS Code, Git, Figma, MongoDB Compaus</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Developed an e-commerce booking app backend apis. Allowed users to
+              create accounts as customers or vendors. Vendors can upload cars
+              details for admin approval, while customers can book cats from
+              approved vendors.
+            </p>
+            <p>
+              I played a pivotal role in the development of a robust e-commerce
+              booking application by architecting and implementing its backend
+              APIs. The project was centered on creating a seamless platform
+              that allows two distinct user roles—customers and vendors—to
+              interact within a well-structured and secure environment. The app
+              focused primarily on a car rental system, with a clear distinction
+              between the responsibilities and privileges of each user type.
+            </p>
+          </div>
+
+          <div class="card">
+            <h4>Ecomark Shopping Application</h4>
+            <p><strong>Project Name:</strong> Ecomark Project</p>
+            <p><strong>Role:</strong> Senior React Native Developer</p>
+            <p>
+              <strong>Technology:</strong> React Native, Redux Tool Kit, Axios
+            </p>
+            <p><strong>Tools:</strong> Figma, VS Code, Git</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Developed an e-commerce shopping app similar to Amazon and
+              Flipkart. Allowed users to create accounts as customers or
+              vendors. Vendors can upload products for admin approval, while
+              customers can order products from approved vendors.
+            </p>
+            <p>
+              This app is an e-commerce shopping app. This app is similar to
+              Amazon, Filpkart.Accounts can be opened in 2 ways in this app. A
+              customer and a vendor. The seller opens an account in this app
+              along with selling his products and uploads the product and his
+              request goes to the admin and only when the admin approves the
+              product then the product is visible to the customers. When a
+              customer opens his account and can order from any manufacturer.
+              and whoever delivers it will deliver the product.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Better-Life Medical APIs</h4>
+            <p><strong>Project Name:</strong> Better Life Project</p>
+            <p><strong>Role:</strong> Backend Developer</p>
+            <p><strong>Technology:</strong> Express.js, Node.js, MySQL</p>
+            <p><strong>Tools:</strong> AWS Database, VS Code, Git</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Created APIs for managing patient information, doctor connections,
+              and appointment scheduling for a medical clinic.
+            </p>
+            <p>
+              The Project Medical Hospital Mate's hand in this project is to
+              collect the patient's information, to reach the patient's details,
+              to reach the doctor andto set the patient's appointment
+            </p>
+          </div>
+          <div class="card">
+            <h4>Inflooo Mobile Application</h4>
+            <p><strong>Project Name:</strong> Inflooo Project</p>
+            <p><strong>Role:</strong> Senior React Native Developer</p>
+            <p><strong>Technology:</strong> React Native, Redux Kit, GraphQL</p>
+            <p><strong>Tools:</strong> VS Code, Git, Figma, Trello</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Developed an app where users can share social media posts, get
+              them reviewed and approved by a super admin, and earn rewards.
+              Users can also play games to earn additional rewards.
+            </p>
+            <p>
+              The purpose of this app is that anyone can share their social
+              media post on this app and share that post with super admin pass
+              for review and approve their post and get rewards on that post
+              which they can withdraw and repost it somewhere else and use
+              anywhere. And alos he himself can earn rewards by playing spin
+              game or slot game.
+            </p>
+          </div>
+          <div class="card">
+            <h4>i-Sportz Mobile Application</h4>
+            <p><strong>Project Name:</strong> i-Sportz Project</p>
+            <p><strong>Role:</strong> Senior React Native Developer</p>
+            <p><strong>Technology:</strong> React Native, Redux Kit, MySQL</p>
+            <p><strong>Tools:</strong> VS Code, Git, Figma, Trello</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Created an app for sports trainers to set up accounts, list
+              training programs, and manage student training plans. Students can
+              enroll in training programs and renew plans as needed.
+            </p>
+            <p>
+              The purpose of making this i-sportz application is only that Any
+              sports trainers will create an account in this app and set his
+              training amount and verify his account with admin. Once his
+              account is approved, the trainer's profile will appear in this
+              app, then any student who is interested in sports can open an
+              account in this app and take training from that trainer. And if a
+              student chooses a plan and takes training in that time period, if
+              a student's plan expires, he can renew the plan and start his
+              training agai
+            </p>
+          </div>
+          <div class="card">
+            <h4>Payment Gateway</h4>
+            <p><strong>Project Name:</strong> Wieldy Project</p>
+            <p>
+              <strong>Role:</strong> Senior Full Stack Developer and Product
+              Manager
+            </p>
+            <p>
+              <strong>Technology:</strong> React, Redux Saga, Node.js, MongoDB
+            </p>
+            <p><strong>Tools:</strong> VS Code, Bitbucket, Git</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Developed a payment gateway that tracks payment transactions and
+              manages payment details across multiple panels: Admin, Vendor,
+              Agent, and User.
+            </p>
+            <p>
+              The purpose of creating a payment gateway is that wherever someone
+              registers a website, the tracker saves the IP address of the
+              person's website from which the payment has been made, and
+              deposits the amount of the payment. There is an elephant to save
+              the details of where the other person withdraws the payment from.
+              This website or application consists of 4 panels namely
+            </p>
+            <p>
+              Admin Panel which is Super Admin, Vendor Panel which is Vendor,
+              Agent Panel which is Agent and User Panel which is User.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Restaurant and Food App</h4>
+            <p><strong>Project Name:</strong> Take IN Project</p>
+            <p>
+              <strong>Role:</strong> Senior Full Stack Developer and Product
+              Manager
+            </p>
+            <p>
+              <strong>Technology:</strong> React Native, Redux, Geo Location
+            </p>
+            <p><strong>Tools:</strong> VS Code, JIRA, Bitbucket, Git</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Developed an app similar to Zomato for ordering food and booking
+              restaurant tables. Included location-based restaurant details.
+            </p>
+            <p>
+              This application is similar to Zomato. In which anyone can order
+              food at home and book their restaurant table. Also in this
+              application, the details of the restaurant near to the person
+              according to the location of the person are also seen.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Admin Application</h4>
+            <p><strong>Project Name:</strong> Whitelabel Admin Project</p>
+            <p>
+              <strong>Role:</strong> Senior Full Stack Developer and Product
+              Manager
+            </p>
+            <p><strong>Technology:</strong> React Native, Redux ToolKit</p>
+            <p><strong>Tools:</strong> VS Code, Taiga, Git</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Managed an admin application for managing various whitelabel
+              products, including user access and product management.
+            </p>
+            <p>
+              This application is similar to Admin for all manage whitelabel
+              product.
+            </p>
+            <p>
+              From this application the owner of the company can manage many
+              other products such as if any user has to be given any access, it
+              is for you from this application.
+            </p>
+          </div>
+          <div class="card">
+            <h4>e-Commerce Application</h4>
+            <p><strong>Project Name:</strong> Clouth Selling Project</p>
+            <p><strong>Role:</strong> Junior React Native Developer</p>
+            <p>
+              <strong>Technology:</strong> React Native, Expo, Geo Location,
+              Stripe, Paytm, Redux (redux-source)
+            </p>
+            <p>
+              <strong>Tools:</strong> VS Code, Taiga, Git, Paytm and Stripe
+              Payment Gateway
+            </p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Developed an e-commerce app for clothing sales with two panels:
+              one for admin management and one for user orders.
+            </p>
+            <p>
+              This application is similar to e-commerce clouth selling
+              application like amazone and flipkart. There are 2 panels in the
+              application, one panel admin in which any admin can manage their
+              product and the other panel is user in which any user can order
+              the product at home.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Job Alert Application</h4>
+            <p><strong>Project Name:</strong> Refferi Project</p>
+            <p><strong>Role:</strong> Junior React Native Developer</p>
+            <p>
+              <strong>Technology:</strong> React Native, Geo Location, Redux
+            </p>
+            <p><strong>Tools:</strong> VS Code, Git, Figma</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Created a job alert application with three panels: company job
+              creation, HR manager, and job seekers.
+            </p>
+            <p>
+              This application is similar to job alert application like indeed
+              In this application there are 3 panels like company job creation,
+              power, second role is HR manager who is applying for people and
+              jobs by verifying the details and fixing the interview, and third
+              one is employment, who is in need of that job. It can be
+              implemented in the company.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Backend APIs</h4>
+            <p><strong>Project Name:</strong> Black Lotus Project</p>
+            <p><strong>Role:</strong> Senior Full Stack Developer</p>
+            <p><strong>Technology:</strong> Node.js, Express.js, Multer, MVC</p>
+            <p><strong>Tools:</strong> VS Code, Git, MongoDB</p>
+            <p><strong>Description:</strong></p>
+            <p>
+              Developed RESTful APIs for a social media platform allowing users
+              to upload, like, share, and comment on posts.
+            </p>
+            <p>
+              In this project made the Rest full APIs for 3 panel Supper admin,
+              user and user admin to make or create our shayri or photos
+              uploading and show to another user to like share or comments, also
+              user attempt to another user to show, share, likeand comment to
+              other and send the requests or so on, in sort this API or social
+              media
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Contact:
+        <a href="mailto:ajayvalar1@gmail.com">ajayvalar1@gmail.com</a> |
+        <a href="tel:+917284949404">+91 72849 49404</a>
+      </p>
+    </div>
+  </body>
+</html>
